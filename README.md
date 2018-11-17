@@ -15,6 +15,10 @@ Then to launch the Simple_Query class :
 cd target/classes/
 java Simple_Query
 ```
+To launch the Command_Line_Query class : 
+```
+java Command_Line_Query "your sql query"
+```
 
 ## Built with
 
