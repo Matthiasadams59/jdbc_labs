@@ -4,12 +4,8 @@ public class Command_Line_Query {
     public static void main(String[] args) throws Exception {
         if (args.length == 1) {
             try {
-                try {
-                    Class.forName("com.mysql.jdbc.Driver").newInstance();
-                } catch (ClassNotFoundException nf) {
-                    nf.printStackTrace();
-                }
-                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:8888/sakila",
+                Class.forName("com.mysql.jdbc.Driver").newInstance();
+                Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:8889/sakila",
                         "root", "root");
                 System.out.println("here 0");
 
@@ -36,7 +32,7 @@ public class Command_Line_Query {
                 stmt.close();
 
                 System.out.println("here 2");
-            } catch (SQLException ex) {
+            } catch (SQLException | ClassNotFoundException ex) {
                 System.out.println("Error : " + ex);
             }
 

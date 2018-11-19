@@ -7,17 +7,19 @@ JDBC Labs exerices
 At the root the project :
 ```
 mvn install
-mvn clean
-mvn compile
+mvn clean compile package ;
 ```
 Then to launch the Simple_Query class : 
 ```
-cd target/classes/
-java Simple_Query
+java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Simple_Query
 ```
 To launch the Command_Line_Query class : 
 ```
-java Command_Line_Query "your sql query"
+java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Command_Line_Query
+```
+To launch the Reverse_Engineering class : 
+```
+java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Reverse_Engineering
 ```
 
 ## Built with
