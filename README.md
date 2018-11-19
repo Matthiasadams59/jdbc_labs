@@ -15,7 +15,7 @@ java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Simple_Query
 ```
 To launch the Command_Line_Query class : 
 ```
-java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Command_Line_Query
+java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Command_Line_Query "your sql query"
 ```
 To launch the Reverse_Engineering class : 
 ```
