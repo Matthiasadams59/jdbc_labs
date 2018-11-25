@@ -9,7 +9,7 @@ At the root the project :
 mvn install
 mvn clean compile package ;
 ```
-Then to launch the Simple_Query class : 
+Then to launch the Simple_Query class (see the requirements first) : 
 ```
 java -cp target/jdbc_labs-1.0-SNAPSHOT-jar-with-dependencies.jar Simple_Query
 ```
